@@ -1,0 +1,35 @@
+{
+    "name": "arueckauer/dotenv-notempty",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andi Rückauer",
+            "email": "arueckauer@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "vlucas/phpdotenv": "^5.0"
+    },
+    "require-dev": {
+        "laminas/laminas-coding-standard": "^2.0",
+        "phpunit/phpunit": "^9.2",
+        "roave/security-advisories": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "DotEnvNotEmpty\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DotEnvNotEmptyTest\\": "test"
+        }
+    },
+    "minimum-stability": "stable",
+    "scripts": {
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf"
+    }
+}
